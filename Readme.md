@@ -1,6 +1,6 @@
 *Olá meu nome é Kelvin e esse simples Arquivo/Projeto tem como objetivo de deixar relatado os conceitos do Git.*
 
-*O QUE É : Git é um sitemas de controle de versões*
+*O que é : Git é um sitemas de controle de versões*
 -> Git registra as mudanças que ocorrem no código-fonte de um projeto.
 
 -> Logo, permite que os arquivos sejam alterados de forma simultânea, por inúmeras pessoas, sem a preocupação que essas alterações sejam sobrescritas umas pelas outras.
@@ -19,17 +19,32 @@ Git trabalha em uma arquitetura em Branch (ou ramificações).
 Cada novo commit, ou seja, alteração do código, cria um novo ponto na ramificação atual (uma branch).
 
 *1º Comando: Git init* 
-->  cria um repositorio vazio(Uma pasta que iremos armazenar o nosso codigo) & cria uma breanch (Master) 'linha do tempo de versões principais em uma linha coronologica'.
+->  Cria um repositorio vazio(Uma pasta que iremos armazenar o nosso codigo) & cria uma breanch (Master) 'linha do tempo de versões principais em uma linha coronologica'.
 
 Tecnica e conhecimento: Uma boa pratica é criar uma nova ramificação, se por exemplo estivermos um Software grande e acada alteraçao que formos fazer for ficar na "Master" seria diversas versões, então para uma melhor pratica criar ramificação e atualizar a master logo ter terminado a alteração e proporcionando um bom controle de versão é uma otima pratica.
 
 *2º Comando: Git add arquivo ou . caso seja todos*
-->adiciona na area de staging(staging area permite que seja realizado vários commits a partir dela.) uma area que o arquivo ira ficar aguardando o commit e O comando git add mantém o histórico de todas as ações realizadas no código, permitindo que, se algum problema ocorrer na aplicação, o comando de desfazer alteração possa ser acionado. 
+-> Adiciona na area de staging(staging area permite que seja realizado vários commits a partir dela.) uma area que o arquivo ira ficar aguardando o commit e O comando git add mantém o histórico de todas as ações realizadas no código, permitindo que, se algum problema ocorrer na aplicação, o comando de desfazer alteração possa ser acionado. 
 
 *3º Comando: Git status*
--> mostra se tem atualizaçoes feita no arquivo que devem ser comitadas afim de criar uma versão.
+-> Mostra se tem atualizaçoes feita no arquivo que devem ser comitadas afim de criar uma versão.
 
 *4º Comando: Git -m commit "mensagem para informação do que foi alterado"*
--> salva a nova versao do seu arquivo 
+-> Salva a nova versao do seu arquivo 
 
+*Conexão para o Git-Hub*
+*5º Comando: Git remote add origin https://github.com/nomeUsuario/pastaRepositorioLocal.git*
+-> Estabelecimento de onexão com o repositorio local para o repositorio online gitHub.
+*6º Comando: Git push -u origin master*
+-> Coloca a nossa ramificação principal no repositorio
 
+*Fazendo uma nova versão atualizando o arquivo*
+*1º Comando: Git add .*
+-> Seleciona esse arquivo e o move para a área de teste, marcando-o para inclusão no próximo commit.
+*2º Comando: Git status*
+-> Informa se tem alguma alteração.
+*3º Comando: Git commit -m "mensagem para informação do que foi alterado"*
+-> Alteração salva no repositorio da maquina.
+
+*4º Comando: Git push origin master*
+-> Alteração enviada para o GitHub
