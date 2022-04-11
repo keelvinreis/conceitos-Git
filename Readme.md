@@ -70,15 +70,26 @@ Tecnica e conhecimento: Uma boa pratica é criar uma nova ramificação, se por 
 
 -> Alteração enviada para o GitHub.
 
-*Criação de de Branch: Uma ramificação do projeto*
+**Criação de de Branch: Uma ramificação do projeto**
 
 -> Normalmente se cria uma Branch para uma criação de uma Feature, adicionar uma pagina no projeto, um botão...
 
-*Comando: Git checkout -b "Nome da Branch"*
+*1º Comando: Git checkout -b "Nome da Branch"*
 
 ->criação de uma nova Branch saindo da linha cronologica principal (Master).
 
-*Comando: Git add .*
-*Comando: Git commit -m "mensagem"*
+*2º Comando: Git add .*
 
-*Comando: Git push origin 'nome da branch criada'*
+*3º Comando: Git commit -m "mensagem"*
+
+*4º Comando: Git push origin 'nome da branch criada'*
+
+**Junção da Branch criada a qual foi desenvolvida a Feature**
+
+*1º Comando: Git checkout master*
+
+-> Volta para a Branch Padrão
+
+*2º Comando: Git merge 'nome da branch a ser adicionada a padrão'*
+
+->Merge -'Serve para mesclar commits e Branchs na Branch atual' por esse motivo é importante colocar o nome da branch logo após Git merge...
